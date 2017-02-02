@@ -21,16 +21,18 @@ public class Ejercicio2 {
             if (notas[i]<5 && notas[i]>=0){
                 System.out.println(notas[i]+": Suspenso");
             }
-            if(notas[i]>=5 && notas[i]<=10){
+            else if(notas[i]>=5 && notas[i]<=10){
                 System.out.println(notas[i]+": Aprobado");
         }
-            
+            else{
+                System.out.println("Nota fuera de rango:"+notas[i]);
+            }
         }
     }
     public void crearArray() {
         for (int i = 0; i < notas.length; i++) {
             Random rnd= new Random();
-            notas[i]= rnd.nextFloat()*10;
+            notas[i]= Math.round((rnd.nextFloat()*1000))/100f;
         }
     }
     public void visualizarMedia(){
@@ -38,10 +40,10 @@ public class Ejercicio2 {
         for (int i = 0; i < notas.length; i++){
             notasTotal+=notas[i];
         }
-        System.out.println(notasTotal/notas.length);
+        System.out.println("Nota media: "+notasTotal/notas.length);
     }
     public void visualizarMasAlta(){
         Arrays.sort(notas);
-        System.out.println(notas[notas.length-1]);
+        System.out.println("Nota mas alta: "+notas[notas.length-1]);
     }
 }
