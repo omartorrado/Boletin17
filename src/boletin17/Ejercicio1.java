@@ -18,7 +18,7 @@ public class Ejercicio1 {
     public void crearArray() {
         for (int i = 0; i < numeros.length; i++) {
             Random rnd= new Random();
-            numeros[i]= rnd.nextInt(49)+1;
+            numeros[i]= rnd.nextInt(50)+1;
         }
     }
     
