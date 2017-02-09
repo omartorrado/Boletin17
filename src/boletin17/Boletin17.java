@@ -39,13 +39,13 @@ public class Boletin17 {
 //        ej3.visualizarAprovados();
 //        ej3.ordenarAlumnos();
 
-//        Ejercicio4 ej4 = new Ejercicio4();
-//        try{
-//            System.out.println(ej4.obtenerLetraDni(Integer.parseInt(JOptionPane.showInputDialog("Indique su numero de dni"))));
-//        }
-//        catch (Exception e){
-//            System.out.println(ej4.obtenerLetraDni(Integer.parseInt(JOptionPane.showInputDialog("Indique su numero de dni"))));
-//        }
+        Ejercicio4B ej4 = new Ejercicio4B();
+        try{
+            System.out.println(ej4.obtenerLetraDni(Integer.parseInt(JOptionPane.showInputDialog("Indique su numero de dni"))));
+        }
+        catch (Exception e){
+            System.out.println(ej4.obtenerLetraDni(Integer.parseInt(JOptionPane.showInputDialog("Indique su numero de dni"))));
+        }
 // Ver como hacer que esto se repita en bucle mientras devuelva una excepcion
 //que seguro k es una tonteria y no me sale
     }

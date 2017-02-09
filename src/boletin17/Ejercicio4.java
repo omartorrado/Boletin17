@@ -20,7 +20,7 @@ public class Ejercicio4 {
         int resto=dni%23;
         switch(resto){
             case 0:
-                return 'T';
+                return 'T'; 
             case 1:
                 return 'R';
             case 2:
@@ -44,7 +44,7 @@ public class Ejercicio4 {
             case 11:
                 return 'B';
             case 12:
-                return 'N';
+                return 'N'; 
             case 13:
                 return 'J';
             case 14:
